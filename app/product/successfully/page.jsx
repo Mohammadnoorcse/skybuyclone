@@ -14,7 +14,7 @@ const page = () => {
         Your order number is <span className="font-bold">#167389</span>
       </p>
 
-      <div className="w-full max-w-md border mt-8 bg-[#167389] p-4 rounded-md text-white">
+      <div className="w-full max-w-2xl border mt-8 bg-[#167389] p-4 rounded-md text-white">
         <h3 className="text-lg font-semibold mb-4">Order Summary</h3>
 
         <table className="w-full text-sm">

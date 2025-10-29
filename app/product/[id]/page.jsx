@@ -48,17 +48,16 @@ const page = () => {
           <span className="w-full border-b border-[#eee] mt-2"></span>
 
           <div className="flex flex-col gap-4 mt-4 ">
-            <div className="w-full flex justify-center items-center">
-              <Image
+            <div className="w-full h-[20rem] flex justify-center items-center">
+              <img
                 src="/assets/product-dress.webp"
                 alt="Product Image"
-                width={300}
-                height={100}
-                className="object-contain object-center rounded-md"
+                
+                className="w-[40rem] h-full object-fill rounded-md"
               />
             </div>
 
-            <div className=" w-full flex flex-col gap-2">
+            <div className=" w-full flex flex-col gap-2 mt-[3rem]">
               <p className="text-base">
                 <span className="font-semibold">Product Code:</span>{" "}
                 abb-0268697618196
