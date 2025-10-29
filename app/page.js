@@ -12,14 +12,15 @@ const Page = () => {
       <div>
         {/* first section */}
         <div className="w-full flex sm:flex-row flex-col gap-2 shadow  bg-white p-2">
-          <div className="sm:w-5/7">
-            <Image
-              src="/assets/banner.jpg"
-              alt="Logo"
-              width={700}
-              height={500}
-              className="rounded-md"
-            />
+          <div className="sm:w-5/7  ">
+            
+              <img
+                src="/assets/banner.jpg"
+                alt="Logo"
+                
+                className="rounded-md w-full h-full"
+              />
+            
           </div>
 
           <div className="sm:w-2/7 w-full h-full flex sm:flex-col flex-row gap-4">
@@ -44,8 +45,6 @@ const Page = () => {
             </div>
           </div>
         </div>
-
-        
 
         {/* second section */}
         <div className="mt-3 shadow bg-white rounded-md p-4 flex flex-col gap-4">
@@ -203,15 +202,17 @@ const Page = () => {
                     SOLD: 3503
                   </span>
                 </div>
-              </Link >
+              </Link>
             </div>
           </div>
         </div>
 
-         {/* third section */}
+        {/* third section */}
         <div className="mt-3 shadow bg-white rounded-md p-4 flex flex-col gap-4">
           <div className="w-full flex justify-between items-center">
-            <span className="text-[17px] font-bold uppercase">Trending Collection</span>
+            <span className="text-[17px] font-bold uppercase">
+              Trending Collection
+            </span>
             <button className="py-1 px-4 bg-[#167389] text-white text-white rounded-md">
               Views
             </button>
@@ -223,26 +224,45 @@ const Page = () => {
             <div className="w-full grid md:grid-cols-4 grid-cols-2 gap-4">
               {/* card */}
               <div className="w-full">
-
-                <video src="/assets/video.mp4" autoPlay muted loop playsInline className="w-full h-auto rounded-md"/>
-               
+                <video
+                  src="/assets/video.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-auto rounded-md"
+                />
               </div>
               <div className="w-full">
-
-                <video src="/assets/video1.mp4" autoPlay muted loop playsInline className="w-full h-auto rounded-md"/>
-               
+                <video
+                  src="/assets/video1.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-auto rounded-md"
+                />
               </div>
               <div className="w-full">
-
-                <video src="/assets/video2.mp4" autoPlay muted loop playsInline className="w-full h-auto rounded-md"/>
-               
+                <video
+                  src="/assets/video2.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-auto rounded-md"
+                />
               </div>
               <div className="w-full">
-
-                <video src="/assets/video3.mp4" autoPlay muted loop playsInline className="w-full h-auto rounded-md"/>
-               
+                <video
+                  src="/assets/video3.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-auto rounded-md"
+                />
               </div>
-           
             </div>
           </div>
         </div>
@@ -891,7 +911,6 @@ const Page = () => {
             </div>
           </div>
         </div>
-       
       </div>
     </div>
   );
