@@ -132,14 +132,14 @@ const Page = () => {
               {/* card */}
               <Link href={`/product/1`} className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/dress/dress-1.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
                   className="rounded-md"
                 />
                 <span className="text-sm font-medium truncate">
-                  Summer Ice Silk Short-sleeved Quick-drying Thin
+                  Korean Youyou Copper Buckle Dou
                 </span>
                 <div className="w-full flex justify-between items-center">
                   <span className="text-sm font-bold text-red-600">৳ 545</span>
@@ -151,14 +151,14 @@ const Page = () => {
 
               <Link href={`/product/1`} className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/dress/dress-2.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
                   className="rounded-md"
                 />
                 <span className="text-sm font-medium truncate">
-                  Summer Ice Silk Short-sleeved Quick-drying Thin
+                  Brushed Fleece-Lined Stand-Up Coll
                 </span>
                 <div className="w-full flex justify-between items-center">
                   <span className="text-sm font-bold text-red-600">৳ 545</span>
@@ -169,14 +169,14 @@ const Page = () => {
               </Link>
               <Link href={`/product/1`} className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/dress/dress-3.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
                   className="rounded-md"
                 />
                 <span className="text-sm font-medium truncate">
-                  Summer Ice Silk Short-sleeved Quick-drying Thin
+                  Chic Half Turtleneck Knitted Bottom
                 </span>
                 <div className="w-full flex justify-between items-center">
                   <span className="text-sm font-bold text-red-600">৳ 545</span>
@@ -187,14 +187,15 @@ const Page = () => {
               </Link>
               <Link href={`/product/1`} className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/dress/dress-4.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
                   className="rounded-md"
                 />
                 <span className="text-sm font-medium truncate">
-                  Summer Ice Silk Short-sleeved Quick-drying Thin
+                  
+                    Inbyin Pure Color Turtleneck Knitte
                 </span>
                 <div className="w-full flex justify-between items-center">
                   <span className="text-sm font-bold text-red-600">৳ 545</span>
@@ -270,7 +271,7 @@ const Page = () => {
         <div className="mt-3 shadow bg-white rounded-md p-4 flex flex-col gap-4">
           <div className="w-full flex justify-between items-center">
             <span className="text-[17px] font-bold">LADIES BAGS</span>
-            <button className="py-1 px-4 bg-[#167389] text-white text-white rounded-md">
+            <button className="py-1 px-4 bg-[#167389]  text-white rounded-md">
               Views
             </button>
           </div>
@@ -282,7 +283,7 @@ const Page = () => {
               {/* card */}
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/bag/bag-1.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -300,7 +301,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/bag/bag-2.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -318,7 +319,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/bag/bag-3.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -336,7 +337,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/bag/bag-4.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -354,7 +355,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/bag/bag-5.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -372,7 +373,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/bag/bag-6.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -390,7 +391,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/bag/bag-7.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -408,7 +409,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/bag/bag-8.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -426,7 +427,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/bag/bag-9.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -444,7 +445,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/bag/bag-10.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -462,7 +463,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/product.jpg"
+                  src="/assets/bag/bag-11.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -485,7 +486,7 @@ const Page = () => {
         <div className="mt-3 shadow bg-white rounded-md p-4 flex flex-col gap-4">
           <div className="w-full flex justify-between items-center">
             <span className="text-[17px] font-bold">SHOE</span>
-            <button className="py-1 px-4 bg-[#167389] text-white text-white rounded-md">
+            <button className="py-1 px-4 bg-[#167389]  text-white rounded-md">
               Views
             </button>
           </div>
@@ -497,7 +498,7 @@ const Page = () => {
               {/* card */}
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/shoe.jpg"
+                  src="/assets/shoe/shoe-1.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -515,7 +516,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/shoe.jpg"
+                  src="/assets/shoe/shoe-2.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -533,7 +534,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/shoe.jpg"
+                  src="/assets/shoe/shoe-3.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -551,7 +552,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/shoe.jpg"
+                  src="/assets/shoe/shoe-3.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -569,7 +570,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/shoe.jpg"
+                  src="/assets/shoe/shoe-4.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -587,7 +588,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/shoe.jpg"
+                  src="/assets/shoe/shoe-5.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -605,7 +606,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/shoe.jpg"
+                  src="/assets/shoe/shoe-6.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -623,7 +624,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/shoe.jpg"
+                  src="/assets/shoe/shoe-7.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -641,7 +642,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/shoe.jpg"
+                  src="/assets/shoe/shoe-8.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -659,7 +660,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/shoe.jpg"
+                  src="/assets/shoe/shoe-9.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -700,7 +701,7 @@ const Page = () => {
         <div className="mt-3 shadow bg-white rounded-md p-4 flex flex-col gap-4">
           <div className="w-full flex justify-between items-center">
             <span className="text-[17px] font-bold">WATCHE</span>
-            <button className="py-1 px-4 bg-[#167389] text-white text-white rounded-md">
+            <button className="py-1 px-4 bg-[#167389]  text-white rounded-md">
               Views
             </button>
           </div>
@@ -712,7 +713,7 @@ const Page = () => {
               {/* card */}
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/watch.jpg"
+                  src="/assets/watch/watch-1.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -730,7 +731,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/watch.jpg"
+                  src="/assets/watch/watch-2.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -748,7 +749,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/watch.jpg"
+                  src="/assets/watch/watch-3.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -766,7 +767,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/watch.jpg"
+                  src="/assets/watch/watch-4.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -784,7 +785,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/watch.jpg"
+                  src="/assets/watch/watch-5.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -802,7 +803,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/watch.jpg"
+                  src="/assets/watch/watch-6.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -820,7 +821,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/watch.jpg"
+                  src="/assets/watch/watch-8.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -838,7 +839,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/watch.jpg"
+                  src="/assets/watch/watch-9.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -856,7 +857,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/watch.jpg"
+                  src="/assets/watch/watch-10.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -874,7 +875,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/watch.jpg"
+                  src="/assets/watch/watch-11.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
@@ -892,7 +893,7 @@ const Page = () => {
               </div>
               <div className="w-full flex flex-col gap-3">
                 <Image
-                  src="/assets/watch.jpg"
+                  src="/assets/watch/watch-12.jpg"
                   alt="Logo"
                   width={700}
                   height={500}
