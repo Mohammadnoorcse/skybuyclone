@@ -21,10 +21,37 @@ const categories = [
   { name: "tools", image: "/assets/category/tools.svg" },
   { name: "travel", image: "/assets/category/travel.svg" },
   { name: "watch", image: "/assets/category/watch.svg" },
-  { name: "home_improvements", image: "/assets/category/home_improvements.svg" },
-  
+  {
+    name: "home_improvements",
+    image: "/assets/category/home_improvements.svg",
+  },
 ];
 
+const products = [
+  { name: "purse", label: "Purse" },
+  { name: "travel-bag", label: "Travel Bag" },
+  { name: "handbag", label: "Handbag" },
+  { name: "tote-bag", label: "Tote Bag" },
+  { name: "backpack", label: "Backpack" },
+  { name: "duffel-bag", label: "Duffel Bag" },
+  { name: "crossbody-bag", label: "Crossbody Bag" },
+  { name: "shoulder-bag", label: "Shoulder Bag" },
+  { name: "clutch", label: "Clutch" },
+  { name: "messenger-bag", label: "Messenger Bag" },
+  { name: "gym-bag", label: "Gym Bag" },
+  { name: "beach-bag", label: "Beach Bag" },
+  { name: "laptop-bag", label: "Laptop Bag" },
+  { name: "camera-bag", label: "Camera Bag" },
+  { name: "weekender-bag", label: "Weekender Bag" },
+  { name: "sling-bag", label: "Sling Bag" },
+  { name: "briefcase", label: "Briefcase" },
+  { name: "makeup-bag", label: "Makeup Bag" },
+  { name: "shopping-bag", label: "Shopping Bag" },
+  { name: "drawstring-bag", label: "Drawstring Bag" },
+  { name: "school-bag", label: "School Bag" },
+  { name: "sports-bag", label: "Sports Bag" },
+  { name: "hobo-bag", label: "Hobo Bag" },
+];
 const Slidebar = () => {
   const [showProducts, setShowProducts] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -45,12 +72,13 @@ const Slidebar = () => {
       {!showProducts && (
         <div className="grid grid-cols-2">
           {categories.map((cat) => (
-            <div key={cat.name} className="w-full h-[127px] flex justify-center items-center hover:bg-[#E9F0EE] flex-col gap-1 cursor-pointer transition"
-              onClick={() => handleCategoryClick(cat.name)} >
-
+            <div
+              key={cat.name}
+              className="w-full h-[127px] flex justify-center items-center hover:bg-[#E9F0EE] flex-col gap-1 cursor-pointer transition"
+              onClick={() => handleCategoryClick(cat.name)}
+            >
               <Image src={cat.image} alt={cat.name} width={70} height={70} />
               <span className="text-[13px] font-bold">{cat.name}</span>
-
             </div>
           ))}
         </div>
@@ -61,7 +89,10 @@ const Slidebar = () => {
         <div className="w-full h-full overflow-auto scrollbar-hide flex flex-col gap-4">
           {/* Header with Back Button */}
           <div className="w-full flex items-center px-4 py-3 hover:bg-[#E9F0EE] border-b border-gray-200">
-            <button onClick={handleBackClick} className="flex items-center gap-2 text-gray-600 hover:text-black">
+            <button
+              onClick={handleBackClick}
+              className="flex items-center gap-2 text-gray-600 hover:text-black"
+            >
               <FaArrowLeft /> <span className="text-sm">Back</span>
             </button>
             <span className="flex-1 text-center font-bold">
@@ -71,9 +102,13 @@ const Slidebar = () => {
 
           {/* Product Links */}
           <div className="flex flex-col gap-2">
-            {Array.from({ length: 20 }, (_, i) => (
-              <Link href="/blog" key={i} className="text-[13px] font-medium text-[#000] px-4 py-3 hover:bg-[#E9F0EE] transition" >
-                Product {i + 1}
+            {products.map((product) => (
+              <Link
+                key={product.name}
+                href={`/shop/${product.name}`} // ✅ dynamic route
+                className="text-[14px] font-medium text-[#000] px-4 py-3 hover:bg-[#E9F0EE] transition"
+              >
+                {product.label}
               </Link>
             ))}
           </div>
