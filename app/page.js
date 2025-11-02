@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
+import Slider from "./components/home/Slider";
 
 const Page = () => {
   return (
@@ -14,12 +15,14 @@ const Page = () => {
         <div className="w-full flex sm:flex-row flex-col gap-2 shadow  bg-white p-2">
           <div className="sm:w-5/7  ">
             
-              <img
+              {/* <img
                 src="/assets/banner.jpg"
                 alt="Logo"
                 
                 className="rounded-md w-full h-full"
-              />
+              /> */}
+
+              <Slider/>
             
           </div>
 
