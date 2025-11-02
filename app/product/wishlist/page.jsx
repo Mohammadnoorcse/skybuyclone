@@ -1,44 +1,39 @@
-import React from 'react';
-import Image from 'next/image';
+"use client";
 
-const page = () => {
-  const wishlistItems = [
-    {
-      id: 1,
-      name: 'Wireless Headphones',
-      image: 'data:image/jpeg;base64,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',
-      price: '$99',
-      quantity: 1,
-      priority: 'High',
-    },
-    {
-      id: 2,
-      name: 'Gaming Chair',
-      image: 'data:image/jpeg;base64,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',
-      price: '$250',
-      quantity: 1,
-      priority: 'Medium',
-    },
-    {
-      id: 3,
-      name: 'Gaming Chair',
-      image: 'data:image/jpeg;base64,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',
-      price: '$250',
-      quantity: 1,
-      priority: 'Medium',
-    },
-  ];
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import { useCartWishlist } from "@/app/components/global/CartWishlistContext";
+
+const WishlistPage = () => {
+  const { wishlistItems, removeFromWishlist, addToCart } = useCartWishlist();
+  const [mounted, setMounted] = useState(false);
+
+  // Ensure rendering happens only on client
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  if (!wishlistItems || wishlistItems.length === 0) {
+    return (
+      <div className="w-full flex justify-center items-center p-10">
+        <p className="text-gray-500 text-lg">Your wishlist is empty.</p>
+      </div>
+    );
+  }
 
   return (
-    <div className='w-full flex flex-col'>
-      <div className='w-full shadow bg-white p-4 rounded flex items-center justify-between'>
-        <div className='flex items-center gap-1'>
-          <div className='w-[2rem] h-[2rem] rounded-full bg-[#167389] text-white flex justify-center items-center'>
+    <div className="w-full flex flex-col gap-4">
+      {/* Header */}
+      <div className="w-full shadow bg-white p-4 rounded flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded-full bg-[#167389] text-white flex justify-center items-center">
             1
           </div>
-          <span className='text-base uppercase font-medium'>wishlist</span>
+          <span className="text-base uppercase font-medium">Wishlist</span>
         </div>
-        <span className="text-base"> 
+        <span className="text-base">
           {new Date().toLocaleDateString("en-GB", {
             day: "2-digit",
             month: "long",
@@ -47,34 +42,63 @@ const page = () => {
         </span>
       </div>
 
-      <div className='w-full shadow bg-white p-4 rounded flex flex-col gap-4 mt-4'>
-        <h2 className='text-xl font-semibold'>Items</h2>
+      {/* Wishlist Items */}
+      <div className="w-full shadow bg-white p-4 rounded flex flex-col gap-4">
+        <h2 className="text-xl font-semibold">Items</h2>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-          {wishlistItems.map(item => (
-            <div key={item.id} className='border border-gray-200 rounded-lg p-4 shadow-sm bg-white hover:shadow-md transition'>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {wishlistItems.map((item) => (
+            <div
+              key={item?.id}
+              className="border border-gray-200 rounded-lg p-4 shadow-sm bg-white hover:shadow-md transition"
+            >
               {/* Image */}
-              <div className="w-full h-[150px] relative mb-3">
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className='rounded'
-                />
+              {item?.image && (
+                <div className="w-full h-[150px] relative mb-3">
+                  <Image
+                    src={item.image}
+                    alt={item.name || "Product Image"}
+                    fill
+                    style={{ objectFit: "cover" }}
+                    className="rounded"
+                  />
+                </div>
+              )}
+
+              {/* Product Info */}
+              <div className="flex justify-between items-center mb-2 font-medium">
+                {item?.name?.length > 50
+                  ? item.name.slice(0, 50) + "..."
+                  : item?.name || "Unnamed Product"}
               </div>
 
-              <div className='flex justify-between items-center mb-2'>
-                <h3 className='text-lg font-semibold text-gray-800'>{item.name}</h3>
-                <span className='text-sm text-gray-500'>{item.priority} Priority</span>
+              <div className="text-sm text-gray-600 mb-1">
+                <span className="font-medium">Price:</span> {item?.price || "-"}
               </div>
-              <div className='text-sm text-gray-600 mb-1'>
-                <span className='font-medium'>Price:</span> {item.price}
+
+              <div className="text-sm text-gray-600 mb-3">
+                <span className="font-medium">Quantity:</span>{" "}
+                {item?.quantity || 1}
               </div>
-              <div className='text-sm text-gray-600 mb-3'>
-                <span className='font-medium'>Quantity:</span> {item.quantity}
+
+              {/* Actions */}
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => removeFromWishlist(item.id)}
+                  className="text-sm text-red-600 hover:underline cursor-pointer"
+                >
+                  Remove
+                </button>
+                <button
+                  onClick={() => {
+                    addToCart(item, item.quantity || 1);
+                    removeFromWishlist(item.id);
+                  }}
+                  className="text-sm text-[#167389] hover:underline cursor-pointer"
+                >
+                  Add to Cart
+                </button>
               </div>
-              <button className='text-sm text-red-600 hover:underline'>Remove</button>
             </div>
           ))}
         </div>
@@ -83,4 +107,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default WishlistPage;

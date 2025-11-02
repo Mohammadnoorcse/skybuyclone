@@ -1,5 +1,7 @@
+// RootLayout.jsx
 import "./globals.css";
 import ClientLayout from "./ClientLayout";
+import { CartWishlistProvider } from "./components/global/CartWishlistContext";
 
 export const metadata = {
   title: "My App",
@@ -10,7 +12,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ClientLayout>{children}</ClientLayout>
+        <div>
+          <CartWishlistProvider>
+            <ClientLayout>{children}</ClientLayout>
+          </CartWishlistProvider>
+        </div>
       </body>
     </html>
   );

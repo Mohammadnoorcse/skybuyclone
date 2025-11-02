@@ -3,19 +3,23 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Search from '../client/Search'
-import { CiHeart } from "react-icons/ci";
-import { CiShoppingCart } from "react-icons/ci";
+import { CiHeart, CiShoppingCart } from "react-icons/ci";
 import { FaRegUser } from "react-icons/fa";
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { useCartWishlist } from '../global/CartWishlistContext';
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [mounted, setMounted] = useState(false); 
   const router = useRouter();
+  const { cartItems, wishlistItems } = useCartWishlist();
 
   useEffect(() => {
-    const token = localStorage.getItem('token'); // Or whatever you use
+    const token = localStorage.getItem('token'); 
     setIsLoggedIn(!!token);
+
+    setMounted(true); 
   }, []);
 
   return (
@@ -38,26 +42,36 @@ const Navbar = () => {
 
         <div className="w-1/2 lg:flex-1 order-2 lg:order-3 flex justify-end ">
           <div className='flex items-center gap-2 text-right'>
-           <Link href="/product/wishlist"> <CiHeart className='text-3xl text-white' /></Link>
-           <Link href="/product/cart"  className='relative'> 
-           
-           <CiShoppingCart className='text-3xl text-white' />
 
-           <span className='absolute top-[-0.7rem] right-[-4px] text-white'>2</span>
-           
-           
-           </Link>
+            {/* Wishlist */}
+            <Link href="/product/wishlist" className='relative'>
+              <CiHeart className='text-3xl text-white' />
+              {mounted && (
+                <span className='absolute top-[-0.7rem] right-[-4px] text-white'>
+                  {wishlistItems.length}
+                </span>
+              )}
+            </Link>
+
+            {/* Cart */}
+            <Link href="/product/cart" className='relative'> 
+              <CiShoppingCart className='text-3xl text-white' />
+              {mounted && (
+                <span className='absolute top-[-0.7rem] right-[-4px] text-white'>
+                  {cartItems.length}
+                </span>
+              )}
+            </Link>
             
-            <FaRegUser
-              className='text-xl text-white cursor-pointer'
-              onClick={() => {
-                if (isLoggedIn) {
-                  router.push('/dashboard');
-                } else {
-                  router.push('/login');
-                }
-              }}
-            />
+            {/* User */}
+           {mounted && (
+  <FaRegUser
+    className='text-xl text-white cursor-pointer'
+    onClick={() => {
+      router.push(isLoggedIn ? '/dashboard' : '/login');
+    }}
+  />
+)}
           </div>
         </div>
       </div>
