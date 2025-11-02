@@ -2,9 +2,13 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FaRegHeart } from "react-icons/fa";
+import Slider from "@/app/components/product/Slider";
 const page = () => {
   const [activeTab, setActiveTab] = useState('specification');
-// noor
+  const [quantity, setQuantity] = useState(1);
+  const increment = () => setQuantity((prev) => prev + 1);
+  const decrement = () => setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
+
   const renderContent = () => {
     switch (activeTab) {
       case 'specification':
@@ -49,12 +53,13 @@ const page = () => {
 
           <div className="flex flex-col gap-4 mt-4 ">
             <div className="w-full h-[20rem] flex justify-center items-center">
-              <img
+              {/* <img
                 src="/assets/product-dress.webp"
                 alt="Product Image"
                 
                 className="w-[40rem] h-full object-fill rounded-md"
-              />
+              /> */}
+              <Slider/>
             </div>
 
             <div className=" w-full flex flex-col gap-2 mt-[3rem]">
@@ -90,11 +95,11 @@ const page = () => {
 
               <p className="text-base font-semibold">Quantity</p>
               <div className="w-[8rem] h-[2rem] border border-[#156C80] rounded-full flex justify-between items-center">
-                <span className="w-[2rem] h-full bg-[#156C80] rounded-full text-center text-white cursor-pointer">
+                <span onClick={decrement} className="w-[2rem] h-full bg-[#156C80] rounded-full text-center text-white cursor-pointer">
                   -
                 </span>
-                <span>1</span>
-                <span className="w-[2rem] h-full bg-[#156C80] rounded-full text-center text-white cursor-pointer">
+                <span>{quantity}</span>
+                <span onClick={increment} className="w-[2rem] h-full bg-[#156C80] rounded-full text-center text-white cursor-pointer">
                   +
                 </span>
               </div>
