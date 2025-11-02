@@ -38,7 +38,13 @@ const page = () => {
           </div>
           <span className='text-base uppercase font-medium'>wishlist</span>
         </div>
-        <span className='text-base'>27 September, 2025</span>
+        <span className="text-base"> 
+          {new Date().toLocaleDateString("en-GB", {
+            day: "2-digit",
+            month: "long",
+            year: "numeric",
+          })}
+        </span>
       </div>
 
       <div className='w-full shadow bg-white p-4 rounded flex flex-col gap-4 mt-4'>
