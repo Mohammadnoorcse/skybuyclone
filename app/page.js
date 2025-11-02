@@ -217,9 +217,9 @@ const Page = () => {
             <span className="text-[17px] font-bold uppercase">
               Trending Collection
             </span>
-            <button className="py-1 px-4 bg-[#167389] text-white text-white rounded-md">
+            <Link href={`/shop/trend-collection`} className="py-1 px-4 bg-[#167389] text-white text-white rounded-md">
               Views
-            </button>
+            </Link>
           </div>
 
           {/* product */}
@@ -274,9 +274,9 @@ const Page = () => {
         <div className="mt-3 shadow bg-white rounded-md p-4 flex flex-col gap-4">
           <div className="w-full flex justify-between items-center">
             <span className="text-[17px] font-bold">LADIES BAGS</span>
-            <button className="py-1 px-4 bg-[#167389]  text-white rounded-md">
+            <Link href={`/shop/ladies-bags`} className="py-1 px-4 bg-[#167389]  text-white rounded-md">
               Views
-            </button>
+            </Link>
           </div>
 
           {/* product */}
@@ -489,9 +489,9 @@ const Page = () => {
         <div className="mt-3 shadow bg-white rounded-md p-4 flex flex-col gap-4">
           <div className="w-full flex justify-between items-center">
             <span className="text-[17px] font-bold">SHOE</span>
-            <button className="py-1 px-4 bg-[#167389]  text-white rounded-md">
+            <Link href={`/shop/shoes`} className="py-1 px-4 bg-[#167389]  text-white rounded-md">
               Views
-            </button>
+            </Link>
           </div>
 
           {/* product */}
@@ -704,9 +704,9 @@ const Page = () => {
         <div className="mt-3 shadow bg-white rounded-md p-4 flex flex-col gap-4">
           <div className="w-full flex justify-between items-center">
             <span className="text-[17px] font-bold">WATCHE</span>
-            <button className="py-1 px-4 bg-[#167389]  text-white rounded-md">
+            <Link href={`/shop/watch`} className="py-1 px-4 bg-[#167389]  text-white rounded-md">
               Views
-            </button>
+            </Link>
           </div>
 
           {/* product */}

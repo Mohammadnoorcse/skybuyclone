@@ -103,11 +103,7 @@ const Slidebar = () => {
           {/* Product Links */}
           <div className="flex flex-col gap-2">
             {products.map((product) => (
-              <Link
-                key={product.name}
-                href={`/shop/${product.name}`} // ✅ dynamic route
-                className="text-[14px] font-medium text-[#000] px-4 py-3 hover:bg-[#E9F0EE] transition"
-              >
+              <Link key={product.name} href={`/shop/${product.name}`} className="text-[14px] font-medium text-[#000] px-4 py-3 hover:bg-[#E9F0EE] transition">
                 {product.label}
               </Link>
             ))}
